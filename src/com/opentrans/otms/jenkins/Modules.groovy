@@ -3,11 +3,12 @@ package com.opentrans.otms.jenkins
 import java.util.Map
 
 public class Modules {
-    private static Modules instance
-        
+    private static Modules instance;
+
     private static Modules getInstance() { 
-        if (!instance) instance = new Modules()
-        return instance
+        if (instance == null) 
+            instance = new Modules();
+        return instance;
     }
 
     private Map modules = [:];
