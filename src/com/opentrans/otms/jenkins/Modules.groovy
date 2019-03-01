@@ -6,9 +6,9 @@ public class Modules {
     private static Modules instance;
 
     private static Modules getInstance() { 
-        if (instance == null) 
-            instance = new Modules();
-        return instance;
+        if (Modules.instance == null) 
+            Modules.instance = new Modules();
+        return Modules.instance;
     }
 
     private Map modules = [:];
