@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     echo 'test start'
-                    com.opentrans.otms.jenkins.Pipeline.print()
+                    echo com.opentrans.otms.jenkins.Modules.getModules()
                     echo 'test end'
                 }
             }
