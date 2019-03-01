@@ -2,7 +2,7 @@ package com.opentrans.otms.jenkins
 
 public class Modules {
 
-    private static Map<String, String> modules = new HashMap<>();
+    static def modules = [:]
 
     public static void register(String name, String module) {
         modules.put(name, module);
