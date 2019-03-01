@@ -4,9 +4,9 @@ pipeline {
         stage('test') {
             steps {
                 script {
-                    echo 'test start'
+                    // echo 'test start'
                     echo com.opentrans.otms.jenkins.Modules.getModules()
-                    echo 'test end'
+                    // echo 'test end'
                 }
             }
         }

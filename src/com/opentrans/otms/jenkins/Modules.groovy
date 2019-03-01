@@ -11,6 +11,6 @@ public class Modules {
     }
 
     public static Map getModules() {
-        return modules;
+        return com.opentrans.otms.jenkins.Modules.modules;
     }
 }
