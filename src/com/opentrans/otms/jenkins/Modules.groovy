@@ -4,13 +4,15 @@ import java.util.Map
 
 public class Modules {
 
-    private static Map modules = [:]
+    private static Modules instance = new Modules();
+
+    private Map modules = [:];
 
     public static void register(String name, String module) {
-        modules.put(name, module);
+        instance.modules.put(name, module);
     }
 
     public static Map getModules() {
-        return com.opentrans.otms.jenkins.Modules.modules;
+        return instance.modules;
     }
 }
