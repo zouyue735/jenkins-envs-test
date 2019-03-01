@@ -6,7 +6,7 @@ public class Modules {
     private static Modules instance
         
     private static Modules getInstance() { 
-        if (!instance) instance = new Modules(args)
+        if (!instance) instance = new Modules()
         return instance
     }
 
