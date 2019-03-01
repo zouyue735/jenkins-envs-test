@@ -4,9 +4,9 @@ pipeline {
         stage('test') {
             steps {
                 script {
-                    System.out.println("test start")
+                    echo "test start"
                     com.opentrans.otms.jenkins.Pipeline.print()
-                    System.out.println("test end")
+                    echo "test end"
                 }
             }
         }
