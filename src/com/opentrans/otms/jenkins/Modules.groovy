@@ -1,6 +1,6 @@
 package com.opentrans.otms.jenkins
 
-import java.collection.Map
+import java.util.Map
 
 public class Modules {
 
