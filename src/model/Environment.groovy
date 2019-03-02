@@ -26,8 +26,8 @@ class Environment implements model.Named, java.io.Serializable {
         
     //}
 
-    @Override
-    String toString() {
-        return "modules: " + this.modules + ", components: " + this.components + ", configurations: " + this.configurations
-    }
+    //@Override
+    //String toString() {
+        //return "modules: " + this.modules + ", components: " + this.components + ", configurations: " + this.configurations
+    //}
 }
