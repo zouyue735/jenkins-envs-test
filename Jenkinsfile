@@ -4,9 +4,16 @@ pipeline {
         stage('test') {
             steps {
                 script {
+                    // TODO read envName param
+
                     echo 'test start'
-                    com.opentrans.otms.jenkins.Pipeline.print()
-                    echo com.opentrans.otms.jenkins.Modules.modules.toString()
+
+                    Loader loader = new Loader()
+                    Environment env = new Environment(envName)
+                    env.registerModules(loader.loadModules())
+
+                    echo env.toString()
+
                     echo 'test end'
                 }
             }
