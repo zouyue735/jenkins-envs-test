@@ -8,8 +8,8 @@ pipeline {
 
                     echo 'test start'
 
-                    Loader loader = new Loader()
-                    Environment env = new Environment(envName)
+                    model.Loader loader = new model.Loader()
+                    model.Environment env = new model.Environment(envName)
                     env.registerModules(loader.loadModules())
 
                     echo env.toString()
