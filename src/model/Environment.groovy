@@ -12,10 +12,11 @@ class Environment implements Named, java.io.Serializable {
         //this.name = name
     //}
 
-    // @Override
+    @Override
     String name() {
         //return this.name
-        return ''
+        // return ''
+        ''
     }
 
     //def registerModules(Collection<Class<? extends Module>> modules) {
