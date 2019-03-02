@@ -1,3 +1,5 @@
+package model
+
 class Loader {
 
     Set<Class<? extends Module>> loadModules() {
