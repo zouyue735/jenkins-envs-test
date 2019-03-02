@@ -1,7 +1,6 @@
 package model
 
-class Environment {
-    // implements Named, java.io.Serializable {
+class Environment implements Named, java.io.Serializable {
 
     //private String name
 
@@ -13,7 +12,7 @@ class Environment {
         //this.name = name
     //}
 
-    // @Override
+    @Override
     String name() {
         //return this.name
         return ''
