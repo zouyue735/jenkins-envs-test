@@ -2,19 +2,20 @@ package model
 
 class Environment implements Named, java.io.Serializable {
 
-    private String name
+    //private String name
 
     //private Set<Class<? extends Module>> modules = []
     //private Map<String, Component> components = [:]
     //private Map<String, Configuration> configurations = [:]
 
-    Environment(String name) {
-        this.name = name
-    }
+    //Environment(String name) {
+        //this.name = name
+    //}
 
     @Override
     String name() {
-        return this.name
+        //return this.name
+        return ''
     }
 
     //def registerModules(Collection<Class<? extends Module>> modules) {
