@@ -9,7 +9,7 @@ pipeline {
                     echo 'test start'
 
                     model.Loader loader = new model.Loader()
-                    model.Environment env = new model.Environment(envName)
+                    model.Environment env = new model.Environment('test')
                     env.registerModules(loader.loadModules())
 
                     echo env.toString()
