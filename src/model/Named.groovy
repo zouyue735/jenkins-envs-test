@@ -2,5 +2,5 @@ package model
 
 trait Named {
 
-    String name()
+   abstract String name()
 }
