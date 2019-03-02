@@ -1,6 +1,6 @@
 package model
 
-class Environment implements Named, java.io.Serializable {
+class Environment implements Named {
 
     //private String name
 
