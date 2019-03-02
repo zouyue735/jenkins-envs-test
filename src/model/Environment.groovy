@@ -14,7 +14,7 @@ class Environment implements Named, java.io.Serializable {
 
     @Override
     String name() {
-        return name
+        return this.name
     }
 
     def registerModules(Collection<Class<? extends Module>> modules) {
@@ -27,6 +27,6 @@ class Environment implements Named, java.io.Serializable {
 
     @Override
     String toString() {
-        return "modules: " + modules + ", components: " + components + ", configurations: " + configurations
+        return "modules: " + this.modules + ", components: " + this.components + ", configurations: " + this.configurations
     }
 }
