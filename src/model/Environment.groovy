@@ -14,10 +14,10 @@ class Environment {
     //}
 
     // @Override
-    // String name() {
-    //     //return this.name
-    //     return ''
-    //}
+    String name() {
+        //return this.name
+        return ''
+    }
 
     //def registerModules(Collection<Class<? extends Module>> modules) {
     //    this.modules.addAll(modules)
