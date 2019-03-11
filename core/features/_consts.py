@@ -1,0 +1,2 @@
+required = object()
+abstract = object()
